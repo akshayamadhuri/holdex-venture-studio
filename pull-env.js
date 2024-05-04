@@ -26,6 +26,9 @@ const updateEnvs = async () => {
   let envVars = data.data.env;
   let envContent = '';
 
+  // Add your environment variables here
+  envVars['PUB_USE_PRODUCTION_API'] = 'true'; // Added line for PUB_USE_PRODUCTION_API
+
   envContent +=
     Object.keys(envVars)
       .sort()
